@@ -1,17 +1,16 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-
 // create our User model
 class User extends Model {}
 
-// define table columns and configuration
+// create fields/columns for User model
 User.init(
     {
         // define an id column
         id: {
             // use the special Sequelize DataTypes object provide what type of data it is 
-            type: DattaTypes.INTEGER,
+            type: DataTypes.INTEGER,
             // this is the equivalent of SQL's `NOT NULL`option
             allowNull: false,
             // instruct that this is the Primary Key
