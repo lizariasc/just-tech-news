@@ -1,3 +1,4 @@
+const bycrypt = require('bcrypt');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -45,6 +46,14 @@ User.init(
         }
     },
     {
+        hooks: {
+           // set up beforeCreate lifecycle "hook" functionality
+           beforeCreate(userData) {
+           return bcrypt.hash(userData.password, 10).then(newUserData => {
+           return newUserData
+        });
+    }
+  },
         sequelize,
         //  don't automatically create createdAt/updatedAt timestamp fields
         timestamps: false,
