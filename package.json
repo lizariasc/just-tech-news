@@ -2,11 +2,16 @@
   "name": "just-tech-news",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "14.x",
-    "npm": "5.x"
-  },
   "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -15,18 +20,10 @@
     "type": "git",
     "url": "git+https://github.com/lizariasc/just-tech-news.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lizariasc/just-tech-news/issues"
   },
-  "homepage": "https://github.com/lizariasc/just-tech-news#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.6.4"
-  }
+  "homepage": "https://github.com/lizariasc/just-tech-news#readme"
 }
