@@ -38,3 +38,4 @@ If you have any questions about this project, send me an email at lizethariasc14
 ## Mock-up
 ![Mock-up](mockup1.png)
 ![Mock-up](mockup2.png)
+![Mock-up](mockup3.png)
