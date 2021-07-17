@@ -14,6 +14,7 @@ A tech news website where users can post, upvote, and comment on links to news a
 
 ## Installation 
 The user needs to have Node.js installed. Clone the repo, run `npm i` for the dependencies. After that, create an .env file and add your database name, MySQL username, and MySQL password as follows:
+
  `DB_NAME='just_tech_news_db'
  DB_USER='your_mysql_user'
  DB_PW='your_mysql_pw'
@@ -21,12 +22,13 @@ The user needs to have Node.js installed. Clone the repo, run `npm i` for the de
 
  Open MySQL shell and create the database typing source `db/schema.sql` and `quit`to exit the shell.
  Create a `.gitignore` file and add the following files:
+
  `node_modules 
  .DS_Store
  .env`
 
 To start the application, run:
-`npm start` 
+`npm start`. 
 
 
 ## License
